@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>CheckList</title>
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+
+	<body>
+		<script src="https://unpkg.com/vue"></script>
+	  
+		<div id="List">
+			<div class="t">
+				<input v-model="Input" v-on:keypress.enter="Add" class="textbox" type="text">
+				<input @click="Add" class="button" type="button" value="Добавить">
+			</div>
+			<div class="t">
+			   <span><p class="center">Всего элементов: {{Count}}</p></span>
+			   <span><p class="center">Выполнено: {{cont}}</p></span>
+			   <span><p class="center">В процентах: {{InProcent}} %</p></span>
+			</div>
+			<div class="t">
+				<div class="list">
+					<p>Список элементов</p>
+					<ul>
+						<li v-for="(el, index) in list" v-if="el.checked==false">
+							<input v-on:click="el.checked=!el.checked" @click="SelectedElements (index)" type="checkbox">{{ el.name }}
+							<button class="ButtonDel" @click="Delete(index)">X</button>
+						</li>
+					</ul>
+			   </div>
+	   
+				<div class="list" id="right-list">
+					<p>Выбранные элементы</p>
+					<ul>
+						<li v-for="(el, index) in list" v-if="el.checked==true" >
+							<input v-on:click="el.checked=!el.checked"  @click="SelectedElements (index)"type="checkbox" checked>{{ el.name }}
+							<button class="ButtonDel" @click="Delete(index)">X</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body {
+	background-color: #4caf5099;
+}
+div {
+	text-align: center; 
+}
+
+
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	max-height: max-content;
+    display: block;
+    width: 100%;
+	margin-top: 0px;
+}
+.center {
+	text-align:center;
+}
+.h {
+	position: relative;
+	display:inline-flex;
+	width:100%;
+	height:min-content;
+}
+ul {
+	padding-inline-start: 0px;
+	width:100%;
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+li {
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	min-height: 34px;
+	text-align: left;
+}
+.ButtonDel {
+	height: 28px;
+	width:28px;
+/*	background-image:url('../media/delete.png');
+    background-position: center;
+    background-size: contain;
+*/	float: right;
+	position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
+#List {
+	width: 80%;
+	margin:30px auto;
+	background-color: #ffffff9e;
+	border: 1px solid #ffffff;
+	border-radius:5px;
+	position: relative;
+}
+.t {
+	width: 100%;
+	max-height: max-content;
+	padding: 10px 20px;
+	border-bottom: 1px solid #ffffff;
+	position: relative;
+	display: table;
+	box-sizing: border-box;
+}
+.textbox {
+	background-color: whitesmoke;
+	border-bottom: 1px solid #cccccc;
+	width: 80%;
+	height: 35px;
+	font-size: 12pt;
+    font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	float: left;
+}
+.button {
+	width: 15%;
+    padding: 5px 15px;
+	height: 35px;
+    font-size: 12pt;
+    font-family: 'Open Sans', sans-serif;
+	background-color: whitesmoke;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	float: right;
+}
+.list {
+	width: 50%;
+	max-height:799px;
+    position: relative;
+	float: left;
+    margin:0;
+	padding: 10px 15px;
+    display: unset;
+	min-height:inherit;
+	box-sizing: border-box;
+}
+#right-list {
+	float:right;
+	border-left: 1px solid #ffffff;
+	height:inherit;
+}
+
